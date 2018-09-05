@@ -1,0 +1,62 @@
+diff --git a/bootable/recovery/mt_recovery.cpp b/bootable/recovery/mt_recovery.cpp
+old mode 100644
+new mode 100755
+index 1e302e2..967deb9
+--- a/bootable/recovery/mt_recovery.cpp
++++ b/bootable/recovery/mt_recovery.cpp
+@@ -736,6 +736,23 @@ void mt_set_sdcard_update_bootloader_message(void) {
+     mt_set_bootloader_message("boot-recovery", NULL, stage, "sdota\n");
+ }
+ 
++int cp_file(char const * src_path, char const *des_path)
++{
++	char buff[1024];
++	int len;
++    FILE *in,*out;
++
++    in = fopen(src_path,"r+");
++    out = fopen(des_path,"w+");
++
++    while(len = fread(buff,1,sizeof(buff),in))
++    {
++        fwrite(buff,1,len,out);
++    }
++	fclose(in);
++    fclose(out);
++    return 0;
++}
+ /* MTK turnkey wipe data function for smartphones */
+ static bool mt_wipe_data_sp(int confirm, Device* device) {
+     struct phone_encrypt_state ps;
+@@ -763,7 +780,31 @@ static bool mt_wipe_data_sp(int confirm, Device* device) {
+ 
+     mt_set_bootloader_message("boot-recovery", NULL, stage, "recovery\n--wipe_data\n");
+     device->PreWipeData();
++    if (ensure_path_mounted("/data") == 0) {
++    LOGE("Jerry ensure_path_mounted   errno =%d\n", errno);
++    } else {
++        printf("Jerry ensure_path_mounted  /data mount failed\n");
++    }
++    if (ensure_path_mounted("/cache") == 0) {
++    LOGE("Jerry ensure_path_mounted   errno =%d\n", errno);
++    } else {
++        printf("Jerry ensure_path_mounted  /cache mount failed\n");
++    }
++	cp_file("/data/system/input-manager-state.xml","/cache/input-manager-state.xml");
++	usleep(1000);
++	ensure_path_unmounted("/data");
+     erase_volume("/data");
++
++    if (ensure_path_mounted("/data") == 0) {
++    LOGE("Jerry ensure_path_mounted   errno =%d\n", errno);
++    } else {
++        printf("Jerry ensure_path_mounted  /data mount failed\n");
++    }
++	mkdir("/data/system/",0777);
++	cp_file("/cache/input-manager-state.xml","/data/system/input-manager-state.xml");
++	usleep(1000);
++	ensure_path_unmounted("/data");
++	ensure_path_unmounted("/cache");
+     if(is_support_nvdata()) {
+         erase_volume("/nvdata");
+     }
