@@ -3,9 +3,7 @@
     <!-- chenxs add Disa start -->
     <string name="disa_title">Activation Screen</string>
     <string name="disa_reminder">
-        Please enter the activation code\n
-        (from your sales receipt)
-    </string>
+        Please input your password.</string>
     <string name="disa_wrong_code_once">Wrong Activation Code</string>
     <string name="disa_wrong_code_three_times">Try again in <xliff:g id="disa_wait_seconds">%1$d</xliff:g> seconds</string>
     <string name="disa_wrong_code_fourty_times">
@@ -17,8 +15,8 @@
          PLEASE CONTACT (888) 456-3472\n
         (OPERATORS ARE AVAILABLE 24/7)
     </string>
-    <string name="disa_input">Activation Code</string>
-    <string name="disa_button_enter">ENTER</string>
+    <string name="disa_input">password...</string>
+    <string name="disa_button_enter">Enter</string>
     <string name="disa_bottom_text1">
         If the receipt is lost or the activation\n
         code is missing, the code can be\n

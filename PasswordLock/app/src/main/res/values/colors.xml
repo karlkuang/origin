@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <!-- chenxs add start -->
+
     <color name="colorDisaBackground">#252525</color>
     <color name="colorDisaText">#DBDBDB</color>
     <color name="colorDisaKeyBackground">#545454</color>
@@ -11,5 +11,4 @@
     <color name="colorDisaKeyEnd">#545454</color>
     <color name="colorDisaKeyPress">#666666</color>
     <color name="colorDisaKeyStroke">#454545</color>
-    <!-- chenxs add end -->
 </resources>

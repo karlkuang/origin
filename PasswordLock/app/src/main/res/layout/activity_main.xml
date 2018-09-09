@@ -13,7 +13,7 @@
         android:layout_marginTop="35dp"
         android:layout_gravity="center_horizontal">
 
-        <TextView
+        <!--<TextView
             android:id="@+id/disa_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:textColor="@color/colorDisaText"
             android:textSize="25sp"
             android:textScaleX="1.1"
-            android:text="@string/disa_title"/>
+            android:text="@string/disa_title"/>-->
     </LinearLayout>
 
     <RelativeLayout
@@ -32,28 +32,21 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal">
 
-        <ImageView
-            android:id="@+id/image1"
-            android:src="@drawable/disa_rca_logo"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="120dp" />
 
         <ImageView
-            android:id="@+id/image2"
+            android:id="@+id/image"
             android:src="@drawable/disa_lock_logo"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="120dp" />
+            android:layout_marginEnd="175dp" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="30dp"
         android:orientation="horizontal"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="6dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
@@ -79,17 +72,16 @@
         <EditText
             android:id="@+id/disa_input"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:background="@drawable/disa_rounded_edit_text"
             android:typeface="sans"
-            android:hint="@string/disa_input"
             android:maxLength="6"
             android:textScaleX="1.1"
-            android:textSize="18sp"/>
+            android:textSize="15sp"/>
 
-        <com.android.settings.XNumberKeyboardView
+        <com.example.karl.passwordlock.PasswordKeyboardView
             android:id="@+id/disa_view_keyboard"
             android:layout_width="match_parent"
             android:layout_height="280dp"
@@ -111,7 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
@@ -121,7 +113,7 @@
             android:gravity="center"
             android:typeface="sans"
             android:textColor="@color/colorDisaText"
-            android:textSize="17sp"
+            android:textSize="14sp"
             android:textScaleX="1.1"
             android:text="@string/disa_bottom_text1"/>
 
@@ -133,7 +125,7 @@
             android:gravity="center"
             android:typeface="sans"
             android:textColor="@color/colorDisaText"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="italic"
             android:textScaleX="1.1"
             android:text="@string/disa_bottom_text2"/>
@@ -146,7 +138,7 @@
             android:gravity="center"
             android:typeface="sans"
             android:textColor="@color/colorDisaText"
-            android:textSize="17sp"
+            android:textSize="14sp"
             android:textScaleX="1.1"
             android:text="@string/disa_locker_code"/>
 

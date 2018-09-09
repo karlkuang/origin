@@ -37,10 +37,10 @@ public class PasswordKeyboardView extends KeyboardView implements KeyboardView.O
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.XNumberKeyboardView,
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.PasswordKeyboardView,
                 defStyleAttr, 0);
-        mDeleteDrawable = a.getDrawable(R.styleable.XNumberKeyboardView_xnkv_deleteDrawable);
-        mEnterDrawable = a.getDrawable(R.styleable.XNumberKeyboardView_xnkv_enterDrawable);
+        mDeleteDrawable = a.getDrawable(R.styleable.PasswordKeyboardView_xnkv_deleteDrawable);
+        mEnterDrawable = a.getDrawable(R.styleable.PasswordKeyboardView_xnkv_enterDrawable);
 
         a.recycle();
 

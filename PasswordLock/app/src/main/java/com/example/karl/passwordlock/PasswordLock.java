@@ -1,9 +1,13 @@
 package com.example.karl.passwordlock;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -22,10 +26,6 @@ public class PasswordLock extends Activity implements PasswordKeyboardView.IOnKe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);;
-        setupUi();
-    }
-
-    private void setupUi() {
         setContentView(R.layout.activity_main);
 
         mEditText = (EditText) findViewById(R.id.disa_input);
@@ -33,8 +33,21 @@ public class PasswordLock extends Activity implements PasswordKeyboardView.IOnKe
 
         mKeyboardView = (PasswordKeyboardView) findViewById(R.id.disa_view_keyboard);
         mKeyboardView.setIOnKeyboardListener(this);
+        hideStatusNavigationBar();
     }
 
+    private void hideStatusNavigationBar(){
+        if(Build.VERSION.SDK_INT<16){
+            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }else{
+            int uiFlags = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN //hide statusBar
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION; //hide navigationBar
+            getWindow().getDecorView().setSystemUiVisibility(uiFlags);
+        }
+    }
 
     @Override
     public void onPause() {
@@ -75,6 +88,9 @@ public class PasswordLock extends Activity implements PasswordKeyboardView.IOnKe
         if (inputCode.equals("123456")) {
             Log.d(TAG,"start...");
             Toast.makeText(this, "start...", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent();
+            intent.setClassName("com.android.camera2","com.android.camera.CameraLauncher");
+            startActivity(intent);
         } else {
             Log.d(TAG,"return...");
             Toast.makeText(this, "return...", Toast.LENGTH_SHORT).show();
