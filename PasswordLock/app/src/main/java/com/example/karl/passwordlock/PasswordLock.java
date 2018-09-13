@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -28,10 +29,11 @@ public class PasswordLock extends Activity implements PasswordKeyboardView.IOnKe
         super.onCreate(savedInstanceState);;
         setContentView(R.layout.activity_main);
 
-        mEditText = (EditText) findViewById(R.id.disa_input);
+        mEditText = (EditText) findViewById(R.id.passwrodlock_input);
         mEditText.setInputType(InputType.TYPE_NULL);
+        mEditText.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
-        mKeyboardView = (PasswordKeyboardView) findViewById(R.id.disa_view_keyboard);
+        mKeyboardView = (PasswordKeyboardView) findViewById(R.id.passwrodlock_view_keyboard);
         mKeyboardView.setIOnKeyboardListener(this);
         hideStatusNavigationBar();
     }

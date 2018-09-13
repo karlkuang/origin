@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     android:background="@color/colorBackground">
 
 
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
         android:layout_gravity="center_horizontal">
 
 
@@ -27,11 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/disa_reminder"
+            android:id="@+id/passwrodlock_reminder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -51,7 +52,7 @@
         android:layout_gravity="center_horizontal">
 
         <EditText
-            android:id="@+id/disa_input"
+            android:id="@+id/passwrodlock_input"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
@@ -63,7 +64,7 @@
             android:textSize="15sp"/>
 
         <com.example.karl.passwordlock.PasswordKeyboardView
-            android:id="@+id/disa_view_keyboard"
+            android:id="@+id/passwrodlock_view_keyboard"
             android:layout_width="match_parent"
             android:layout_height="280dp"
             android:layout_marginTop="10dp"
@@ -80,15 +81,15 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/disa_bottom_text1"
+            android:id="@+id/passwrodlock_bottom_text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -99,7 +100,7 @@
             android:text="@string/passwordlock_bottom_text1"/>
 
         <TextView
-            android:id="@+id/disa_bottom_text2"
+            android:id="@+id/passwrodlock_bottom_text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -112,10 +113,10 @@
             android:text="@string/passwordlock_bottom_text2"/>
 
         <TextView
-            android:id="@+id/disa_locker_code"
+            android:id="@+id/passwrodlock_locker_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:typeface="sans"
             android:textColor="@color/colorText"
@@ -123,6 +124,6 @@
             android:textScaleX="1.1"
             android:text="@string/passwordlock_locker_code"/>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
 </LinearLayout>
