@@ -89,7 +89,7 @@ public class PasswordLock extends Activity implements PasswordKeyboardView.IOnKe
             Log.d(TAG,"start...");
             Toast.makeText(this, "start...", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent();
-            intent.setClassName("com.android.camera2","com.android.camera.CameraLauncher");
+            intent.setClassName("com.android.settings","com.android.settings.Settings");
             startActivity(intent);
         } else {
             Log.d(TAG,"return...");

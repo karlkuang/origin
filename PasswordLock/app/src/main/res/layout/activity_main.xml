@@ -4,26 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorDisaBackground">
+    android:background="@color/colorBackground">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="35dp"
-        android:layout_gravity="center_horizontal">
-
-        <!--<TextView
-            android:id="@+id/disa_title"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:typeface="sans"
-            android:textColor="@color/colorDisaText"
-            android:textSize="25sp"
-            android:textScaleX="1.1"
-            android:text="@string/disa_title"/>-->
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,11 +17,10 @@
 
         <ImageView
             android:id="@+id/image"
-            android:src="@drawable/disa_lock_logo"
+            android:src="@drawable/lock_logo"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="175dp" />
+            android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -56,10 +37,10 @@
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:typeface="sans"
-            android:textColor="@color/colorDisaText"
+            android:textColor="@color/colorText"
             android:textSize="18sp"
             android:textScaleX="1.1"
-            android:text="@string/disa_reminder"/>
+            android:text="@string/passwordlock_reminder"/>
 
     </LinearLayout>
 
@@ -75,7 +56,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@drawable/disa_rounded_edit_text"
+            android:background="@drawable/rounded_edit_text"
             android:typeface="sans"
             android:maxLength="6"
             android:textScaleX="1.1"
@@ -88,14 +69,14 @@
             android:layout_marginTop="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:background="@color/colorDisaKeyBackground"
+            android:background="@color/colorKeyBackground"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:keyTextColor="@color/colorDisaText"
+            android:keyTextColor="@color/colorText"
             android:shadowColor="@android:color/transparent"
             android:shadowRadius="0"
-            app:xnkv_deleteDrawable="@mipmap/disa_key_delete"
-            app:xnkv_enterDrawable="@mipmap/disa_key_enter"/>
+            app:xnkv_deleteDrawable="@mipmap/key_delete"
+            app:xnkv_enterDrawable="@mipmap/key_enter"/>
 
     </LinearLayout>
 
@@ -112,10 +93,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:typeface="sans"
-            android:textColor="@color/colorDisaText"
+            android:textColor="@color/colorText"
             android:textSize="14sp"
             android:textScaleX="1.1"
-            android:text="@string/disa_bottom_text1"/>
+            android:text="@string/passwordlock_bottom_text1"/>
 
         <TextView
             android:id="@+id/disa_bottom_text2"
@@ -124,11 +105,11 @@
             android:layout_marginTop="5dp"
             android:gravity="center"
             android:typeface="sans"
-            android:textColor="@color/colorDisaText"
+            android:textColor="@color/colorText"
             android:textSize="14sp"
             android:textStyle="italic"
             android:textScaleX="1.1"
-            android:text="@string/disa_bottom_text2"/>
+            android:text="@string/passwordlock_bottom_text2"/>
 
         <TextView
             android:id="@+id/disa_locker_code"
@@ -137,10 +118,10 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:typeface="sans"
-            android:textColor="@color/colorDisaText"
+            android:textColor="@color/colorText"
             android:textSize="14sp"
             android:textScaleX="1.1"
-            android:text="@string/disa_locker_code"/>
+            android:text="@string/passwordlock_locker_code"/>
 
     </LinearLayout>
 

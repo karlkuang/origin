@@ -4,11 +4,11 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="colorDisaBackground">#252525</color>
-    <color name="colorDisaText">#DBDBDB</color>
-    <color name="colorDisaKeyBackground">#545454</color>
-    <color name="colorDisaKeyStart">#838383</color>
-    <color name="colorDisaKeyEnd">#545454</color>
-    <color name="colorDisaKeyPress">#666666</color>
-    <color name="colorDisaKeyStroke">#454545</color>
+    <color name="colorBackground">#252525</color>
+    <color name="colorText">#DBDBDB</color>
+    <color name="colorKeyBackground">#545454</color>
+    <color name="colorKeyStart">#838383</color>
+    <color name="colorKeyEnd">#545454</color>
+    <color name="colorKeyPress">#666666</color>
+    <color name="colorKeyStroke">#454545</color>
 </resources>
