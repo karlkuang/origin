@@ -82,7 +82,7 @@ public class SplashActivity extends BaseActivity {
             if (LockUtil.isStatAccessPermissionSet(SplashActivity.this)) {
                 gotoCreatePwdActivity();
             } else {
-                ToastUtil.showToast("没有权限");
+                //ToastUtil.showToast("没有权限");
                 finish();
             }
         }

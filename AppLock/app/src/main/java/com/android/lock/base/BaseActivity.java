@@ -43,7 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         if (mToolbar != null) {
             setSupportActionBar(mToolbar);
-            getSupportActionBar().setTitle("App Lock");
+            getSupportActionBar().setTitle("");
             SystemBarHelper.immersiveStatusBar(this);
             SystemBarHelper.setHeightAndPadding(this, mToolbar);
             mToolbar.setNavigationOnClickListener(new View.OnClickListener() {

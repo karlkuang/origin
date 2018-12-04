@@ -12,7 +12,7 @@ import com.android.lock.utils.SpUtil;
 
 /**
  * 开机启动广播
- * Created by admin on 2017/3/4.
+ * Created by admin on 2018/12/03.
  */
 
 public class BootBroadcastReceiver extends BroadcastReceiver {

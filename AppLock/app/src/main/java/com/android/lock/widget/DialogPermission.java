@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.android.lock.R;
 
 /**
- * Created by admin on 2017/2/28.
+ * Created by admin on 2018/12/03.
  */
 
 public class DialogPermission extends BaseDialog {

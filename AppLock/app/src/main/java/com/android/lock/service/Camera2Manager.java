@@ -39,7 +39,7 @@ import java.util.Collections;
 
 /**
  * 参考：https://github.com/miqt/camera2
- * Created by android on 2017/3/9.
+ * Created by android on 2018/12/03.
  * 386707112@qq.com
  */
 

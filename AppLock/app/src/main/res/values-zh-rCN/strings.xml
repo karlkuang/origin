@@ -65,6 +65,7 @@
     <string name="on">开</string>
     <string name="off">关</string>
     <string name="now">立即</string>
+    <string name="password_reset">密码重置成功</string>
     <!-- create_pwd_activity -->
     <string name="welcome">欢迎使用应用锁</string>
     <string name="reset">重置</string>

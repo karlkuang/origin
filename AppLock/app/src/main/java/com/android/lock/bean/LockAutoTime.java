@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 /**
  * 自动锁屏时间
- * Created by android on 2017/1/10.
+ * Created by android on 2018/12/03.
  *
  * 15秒=15000，30秒=30000 1分钟=60000  3分钟=180000 5分钟=300000
  * 10分钟=600000 30分钟=1800000

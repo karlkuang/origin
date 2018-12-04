@@ -78,7 +78,7 @@ public class LockSettingActivity extends BaseActivity implements View.OnClickLis
         mLockSwitch.setChecked(isLockOpen);
 
         boolean isLockAutoScreen = SpUtil.getInstance().getBoolean(AppConstants.LOCK_AUTO_SCREEN, false);
-        mLockScreenSwitch.setText(isLockAutoScreen ? "on" : "off");
+        mLockScreenSwitch.setText(getResources().getString(R.string.off));
 
         boolean isTakePic = SpUtil.getInstance().getBoolean(AppConstants.LOCK_AUTO_RECORD_PIC,false);
         mLockTakePicSwitch.setText(isTakePic ? "on" : "off");
@@ -167,7 +167,7 @@ public class LockSettingActivity extends BaseActivity implements View.OnClickLis
         if (resultCode == RESULT_OK) {
             switch (requestCode) {
                 case REQUEST_CHANGE_PWD:
-                    ToastUtil.showToast("密码重置成功");
+                    ToastUtil.showToast(getResources().getString(R.string.password_reset));
                     break;
             }
         }

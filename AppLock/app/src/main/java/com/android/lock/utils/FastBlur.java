@@ -20,7 +20,7 @@ import android.graphics.Bitmap;
 
 /**
  * 高斯模糊类
- * Created by paveld on 3/6/14.
+ * Created by admin on 2018/12/03.
  */
 public class FastBlur {
 

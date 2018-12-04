@@ -66,6 +66,7 @@
     <string name="on">On</string>
     <string name="off">Off</string>
     <string name="now">Now</string>
+    <string name="password_reset">Password reset succeeful</string>
     <!-- create_pwd_activity -->
     <string name="welcome">Welcome to App Lock</string>
     <string name="reset">Reset</string>

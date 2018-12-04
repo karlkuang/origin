@@ -162,7 +162,7 @@ public class GestureCreateActivity extends BaseActivity implements View.OnClickL
 
     @Override
     public void ConfirmWrong() {
-        mChosenPattern = null;
+        //mChosenPattern = null;
         clearPattern();
     }
 
