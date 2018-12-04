@@ -107,6 +107,9 @@ public class GestureUnlockActivity extends BaseActivity implements View.OnClickL
 
         mAppLogo = (ImageView) findViewById(R.id.app_logo);
         mAppLabel = (TextView) findViewById(R.id.app_label);
+        mIconMore.setVisibility(View.GONE);
+        mAppLogo.setVisibility(View.GONE);
+        mAppLabel.setVisibility(View.GONE);
         mFingerprintIcon = (ImageView) findViewById(R.id.fingerprint_icon);
 
         mFmc = FingerprintManagerCompat.from(this);
