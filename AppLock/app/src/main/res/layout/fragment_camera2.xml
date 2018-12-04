@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.lzx.lock.module.camera.Camera2Fragment">
+    tools:context="com.android.lock.module.camera.Camera2Fragment">
 
     <TextureView
         android:id="@+id/tv_textview"
@@ -23,7 +23,8 @@
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="44dp"
-            android:background="#F1F2aa" />
+            android:background="#F1F2aa"
+            tools:ignore="RtlCompat" />
 
         <Button
             android:id="@+id/btn_takepic"
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="拍照" />
+            android:text="@string/photo_title" />
     </RelativeLayout>
 
 </LinearLayout>

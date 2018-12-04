@@ -38,7 +38,7 @@
             android:layout_height="50dp"
             android:layout_toRightOf="@+id/btn_back"
             android:gravity="center"
-            android:text="应用锁"
+            android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="14sp"/>
 
@@ -56,12 +56,12 @@
             android:layout_below="@+id/lock_icon"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="身份确认"
+            android:text="@string/identity_confirmation"
             android:textColor="@color/white"
             android:textSize="14sp"/>
     </RelativeLayout>
 
-    <com.lzx.lock.widget.LockPatternView
+    <com.android.lock.widget.LockPatternView
         android:id="@+id/unlock_lock_view"
         android:layout_width="290dp"
         android:layout_height="290dp"

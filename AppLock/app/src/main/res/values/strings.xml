@@ -1,30 +1,30 @@
 <resources>
-    <string name="app_name">应用锁</string>
+    <string name="app_name">App Lock</string>
 
-    <string name="lock_first_btn" formatted="false">保护(%s)</string>
+    <string name="lock_first_btn" formatted="false">Protect(%s)</string>
 
-    <!--图形解锁控件相关-->
-    <string name="lockscreen_access_pattern_cell_added">已添加单元格</string>
-    <string name="lockscreen_access_pattern_start">绘制解锁图案</string>
-    <string name="lockscreen_access_pattern_detected">密码已保存</string>
-    <string name="lockscreen_access_pattern_cleared">密码已删除</string>
+    <!-- Graphic unlock control -->
+    <string name="lockscreen_access_pattern_cell_added">Added cell</string>
+    <string name="lockscreen_access_pattern_start">Drawing an unlock pattern</string>
+    <string name="lockscreen_access_pattern_detected">Password saved</string>
+    <string name="lockscreen_access_pattern_cleared">Password deleted</string>
 
-    <string name="lock_recording_intro_header">设置应用程序的解锁密码</string>
-    <string name="lock_settings_help_how_to_record">如何绘制解锁图案</string>
-    <string name="lock_recording_incorrect_too_short">应连接至少4个点。</string>
-    <string name="lock_pattern_entered_header">记录密码</string>
-    <string name="lock_need_to_confirm">再次绘制图案以确认</string>
-    <string name="lock_need_to_unlock_wrong">密码不匹配，请重试。</string>
-    <string name="password_gestrue_tips">绘制密码解锁</string>
-    <string name="password_error_count">密码不匹配。请重试。</string>
-    <string name="lock_draw_unlock_pattern">画出解锁路径</string>
-    <string name="lock_enter_pin_code">输入数字密码</string>
+    <string name="lock_recording_intro_header">Set the application\'s unlock password</string>
+    <string name="lock_settings_help_how_to_record">How to draw an unlock pattern</string>
+    <string name="lock_recording_incorrect_too_short">At least 4 points should be connected.</string>
+    <string name="lock_pattern_entered_header">Record password</string>
+    <string name="lock_need_to_confirm">Draw the pattern again to confirm</string>
+    <string name="lock_need_to_unlock_wrong">The passwords do not match, Please try again.</string>
+    <string name="password_gestrue_tips">Draw a password to unlock</string>
+    <string name="password_error_count">The passwords do not match, Please try again.</string>
+    <string name="lock_draw_unlock_pattern">Draw an unlock path</string>
+    <string name="lock_enter_pin_code">Enter a numeric password</string>
     <string name="lock_pattern_confirmed_header"></string>
 
-    <!--数字解锁相关-->
-    <string name="num_create_text_01">输入4位数密码即可解锁</string>
-    <string name="num_create_text_02">再次输入以确认</string>
-    <string name="num_create_text_03">密码不匹配，请重试</string>
+    <!-- Digital unlock -->
+    <string name="num_create_text_01">Enter a 4-number password to unlock</string>
+    <string name="num_create_text_02">Enter again to confirm</string>
+    <string name="num_create_text_03">Password does not match, please try again.</string>
     <string name="number_1">1</string>
     <string name="number_2">2</string>
     <string name="number_3">3</string>
@@ -35,19 +35,55 @@
     <string name="number_8">8</string>
     <string name="number_9">9</string>
     <string name="number_0">0</string>
-    <string name="password_short">请输入至少4个字符。</string>
+    <string name="password_short">Please enter at least 4 number.</string>
 
     <string-array name="lock_time_array">
-        <item>15 秒</item>
-        <item>30 秒</item>
-        <item>1 分钟</item>
-        <item>3 分钟</item>
-        <item>5 分钟</item>
-        <item>10 分钟</item>
-        <item>30 分钟</item>
-        <item>立即</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>Now</item>
     </string-array>
 
-    <string name="dialog_tip">你的系统大于等于5.0，我们需要获取 “查看应用使用情况” 权限
+    <string name="dialog_tip">Your system is greater than or equal to 5.0,
+        we need to get the "application usage" permission.
     </string>
+    <!--setting activity -->
+    <string name="setting_title">Setting</string>
+    <string name="setting_on_lock_application">Opened, password is required when the locked app is open</string>
+    <string name="setting_off_lock_application">Closed, no password is required when the locked app is open</string>
+    <string name="Lock_time">Lock time</string>
+    <string name="after_locking_the_screen">After lock screen</string>
+    <string name="after_locking_screen_title">Lock after lock screen</string>
+    <string name="open">Open</string>
+    <string name="unlock_error_photo">Unlock error auto photo</string>
+    <string name="change_password">Change password</string>
+    <string name="display_path">Display path</string>
+    <string name="about_me">About me</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="now">Now</string>
+    <!-- create_pwd_activity -->
+    <string name="welcome">Welcome to App Lock</string>
+    <string name="reset">Reset</string>
+    <!-- gesture_lock -->
+    <string name="create_password">Create password</string>
+    <string name="please_draw_your_password">Please draw your password</string>
+    <!-- dialog search -->
+    <string name="search">Search</string>
+    <string name="search_apps">Search application</string>
+
+    <string name="photo_title">Photo</string>
+
+    <!-- dialog permission -->
+    <string name="prompt">Prompt</string>
+    <string name="obtain">Obtain</string>
+
+    <string name="minute_1">1 minute</string>
+    <string name="identity_confirmation">Identity confirmation</string>
+    <string name="system_app">System apps</string>
+    <string name="third_party_app">Third party apps</string>
 </resources>

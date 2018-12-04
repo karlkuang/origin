@@ -8,7 +8,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "com.lzx.lock"
+        applicationId "com.android.lock"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 2

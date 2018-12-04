@@ -1,0 +1,25 @@
+package com.android.lock.utils;
+
+import android.view.Window;
+import android.view.WindowManager;
+
+/**
+ * Created by admin on 2018/12/03.
+ */
+
+public class AppUtils {
+
+    public static void hideStatusBar(Window window, boolean enable) {
+        WindowManager.LayoutParams p = window.getAttributes();
+        if (enable)
+            //|=：或等于，取其一
+            p.flags |= WindowManager.LayoutParams.FLAG_FULLSCREEN;
+        else
+            //&=：与等于，取其二同时满足，     ~ ： 取反
+            p.flags &= (~WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        window.setAttributes(p);
+        window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+    }
+
+}
